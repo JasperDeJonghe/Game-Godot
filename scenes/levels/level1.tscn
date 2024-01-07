@@ -1,12 +1,12 @@
 [gd_scene load_steps=12 format=3 uid="uid://b70pyjetak0ub"]
 
-[ext_resource type="Texture2D" uid="uid://bjx6682woum8h" path="res://png/Green.png" id="1_adyga"]
+[ext_resource type="Texture2D" uid="uid://di2dstyvcueqs" path="res://png/Green.png" id="1_adyga"]
 [ext_resource type="Texture2D" uid="uid://byvrgq3o36six" path="res://png/Terrain (16x16).png" id="2_3ykvl"]
 [ext_resource type="PackedScene" uid="uid://dvid7gwb4gd2j" path="res://scenes/Character.tscn" id="3_mrs6k"]
 [ext_resource type="Script" path="res://scenes/Character.gd" id="4_l5rc8"]
-[ext_resource type="Texture2D" uid="uid://crg0dswl6jqvb" path="res://png/Idle.png" id="5_i8imf"]
 [ext_resource type="PackedScene" uid="uid://brhmf85bkn85v" path="res://scenes/collectable.tscn" id="6_eqniy"]
 [ext_resource type="Script" path="res://scenes/GameManager.gd" id="7_xwgwe"]
+[ext_resource type="PackedScene" uid="uid://qlcrm2mf4mui" path="res://scenes/levels/level2.tscn" id="8_2anys"]
 [ext_resource type="PackedScene" uid="uid://bgsgviayau7aj" path="res://scenes/finish.tscn" id="8_db0lk"]
 [ext_resource type="PackedScene" uid="uid://rdxiksx2q7u" path="res://scenes/spike.tscn" id="9_68aun"]
 
@@ -617,18 +617,6 @@ script = ExtResource("4_l5rc8")
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
-[node name="Idle" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(771, 585)
-scale = Vector2(6.375, 4.875)
-texture = ExtResource("5_i8imf")
-
-[node name="Idle2" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(1728, 583)
-scale = Vector2(6.375, 4.875)
-texture = ExtResource("5_i8imf")
-
 [node name="colectables" type="Node" parent="."]
 
 [node name="Area2D" parent="colectables" instance=ExtResource("6_eqniy")]
@@ -694,6 +682,7 @@ script = ExtResource("7_xwgwe")
 
 [node name="finish" parent="." instance=ExtResource("8_db0lk")]
 position = Vector2(3076, 162)
+target_level = ExtResource("8_2anys")
 
 [node name="Area2D" parent="." instance=ExtResource("9_68aun")]
 position = Vector2(1418, 555)
@@ -703,3 +692,27 @@ position = Vector2(1465, 553)
 
 [node name="Area2D3" parent="." instance=ExtResource("9_68aun")]
 position = Vector2(1512, 552)
+
+[node name="Area2D4" parent="." instance=ExtResource("9_68aun")]
+position = Vector2(746, 600)
+
+[node name="Area2D5" parent="." instance=ExtResource("9_68aun")]
+position = Vector2(793, 600)
+
+[node name="Area2D6" parent="." instance=ExtResource("9_68aun")]
+position = Vector2(1703, 601)
+
+[node name="Area2D7" parent="." instance=ExtResource("9_68aun")]
+position = Vector2(1753, 600)
+
+[node name="Area2D8" parent="." instance=ExtResource("9_68aun")]
+position = Vector2(2810, 456)
+
+[node name="Area2D9" parent="." instance=ExtResource("9_68aun")]
+position = Vector2(2858, 456)
+
+[node name="Area2D10" parent="." instance=ExtResource("9_68aun")]
+position = Vector2(2907, 456)
+
+[node name="Area2D11" parent="." instance=ExtResource("9_68aun")]
+position = Vector2(2954, 456)

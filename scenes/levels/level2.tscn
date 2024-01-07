@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://qlcrm2mf4mui"]
+[gd_scene load_steps=12 format=3 uid="uid://qlcrm2mf4mui"]
 
-[ext_resource type="Texture2D" uid="uid://dfmbtnyq77qi4" path="res://png/Blue.png" id="1_y10sh"]
+[ext_resource type="Texture2D" uid="uid://dadw32mgf7twn" path="res://png/Blue.png" id="1_y10sh"]
 [ext_resource type="Texture2D" uid="uid://byvrgq3o36six" path="res://png/Terrain (16x16).png" id="2_3ykvl"]
 [ext_resource type="PackedScene" uid="uid://dvid7gwb4gd2j" path="res://scenes/Character.tscn" id="3_mrs6k"]
 [ext_resource type="Script" path="res://scenes/Character.gd" id="4_l5rc8"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://scenes/GameManager.gd" id="7_xwgwe"]
 [ext_resource type="PackedScene" uid="uid://rdxiksx2q7u" path="res://scenes/spike.tscn" id="8_8rxni"]
 [ext_resource type="PackedScene" uid="uid://bgsgviayau7aj" path="res://scenes/finish.tscn" id="8_db0lk"]
+[ext_resource type="PackedScene" uid="uid://cwksjk2gg567m" path="res://scenes/levels/mainMenu.tscn" id="8_p7cgc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_151ea"]
 texture = ExtResource("2_3ykvl")
@@ -679,6 +680,7 @@ script = ExtResource("7_xwgwe")
 
 [node name="finish" parent="." instance=ExtResource("8_db0lk")]
 position = Vector2(3052, 255)
+target_level = ExtResource("8_p7cgc")
 
 [node name="damage" type="Node" parent="."]
 

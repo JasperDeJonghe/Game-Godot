@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgsgviayau7aj"]
+[gd_scene load_steps=4 format=3 uid="uid://bgsgviayau7aj"]
 
 [ext_resource type="Texture2D" uid="uid://dflb51s2xqerb" path="res://png/End (Idle).png" id="1_2s52o"]
+[ext_resource type="Script" path="res://scenes/finish.gd" id="1_ahbtj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkewe"]
 size = Vector2(44.4, 44)
 
 [node name="finish" type="Area2D"]
+script = ExtResource("1_ahbtj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -16,3 +18,5 @@ texture = ExtResource("1_2s52o")
 position = Vector2(-0.499996, 27)
 scale = Vector2(2.5, 2.5)
 shape = SubResource("RectangleShape2D_qkewe")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
