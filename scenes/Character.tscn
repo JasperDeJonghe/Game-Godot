@@ -1,8 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://dvid7gwb4gd2j"]
+[gd_scene load_steps=32 format=3 uid="uid://dvid7gwb4gd2j"]
 
 [ext_resource type="Texture2D" uid="uid://mfxmps02qoxc" path="res://png/Idle (32x32).png" id="1_ijyjy"]
 [ext_resource type="Texture2D" uid="uid://c3h3n1f8bqeev" path="res://png/Jump (32x32).png" id="2_k43tw"]
 [ext_resource type="Texture2D" uid="uid://oguabmmh0yyl" path="res://png/Run (32x32).png" id="3_m5xoh"]
+[ext_resource type="AudioStream" uid="uid://bx4you1te7wxx" path="res://sounds/jump.mp3" id="4_rybeb"]
+[ext_resource type="AudioStream" uid="uid://dcmqfpxde1nt1" path="res://sounds/damage.mp3" id="5_klhx2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xxu01"]
 atlas = ExtResource("1_ijyjy")
@@ -206,3 +208,13 @@ frame_progress = 0.0355913
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 12)
 shape = SubResource("RectangleShape2D_paox0")
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_rybeb")
+volume_db = -3.391
+pitch_scale = 1.8
+
+[node name="damage" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_klhx2")
+volume_db = -16.248
+pitch_scale = 2.4
