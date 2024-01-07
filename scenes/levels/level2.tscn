@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://qlcrm2mf4mui"]
+[gd_scene load_steps=13 format=3 uid="uid://qlcrm2mf4mui"]
 
 [ext_resource type="Texture2D" uid="uid://dadw32mgf7twn" path="res://png/Blue.png" id="1_y10sh"]
 [ext_resource type="Texture2D" uid="uid://byvrgq3o36six" path="res://png/Terrain (16x16).png" id="2_3ykvl"]
 [ext_resource type="PackedScene" uid="uid://dvid7gwb4gd2j" path="res://scenes/Character.tscn" id="3_mrs6k"]
 [ext_resource type="Script" path="res://scenes/Character.gd" id="4_l5rc8"]
 [ext_resource type="PackedScene" uid="uid://brhmf85bkn85v" path="res://scenes/collectable.tscn" id="5_6b8dg"]
+[ext_resource type="AudioStream" uid="uid://dcmqfpxde1nt1" path="res://sounds/damage.mp3" id="7_n6kdm"]
 [ext_resource type="Script" path="res://scenes/GameManager.gd" id="7_xwgwe"]
 [ext_resource type="PackedScene" uid="uid://rdxiksx2q7u" path="res://scenes/spike.tscn" id="8_8rxni"]
 [ext_resource type="PackedScene" uid="uid://bgsgviayau7aj" path="res://scenes/finish.tscn" id="8_db0lk"]
@@ -677,6 +678,11 @@ vertical_alignment = 1
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("7_xwgwe")
+
+[node name="damage" type="AudioStreamPlayer2D" parent="GameManager"]
+stream = ExtResource("7_n6kdm")
+volume_db = -16.248
+pitch_scale = 2.4
 
 [node name="finish" parent="." instance=ExtResource("8_db0lk")]
 position = Vector2(3052, 255)
