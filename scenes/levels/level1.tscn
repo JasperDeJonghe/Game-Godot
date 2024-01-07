@@ -682,15 +682,15 @@ vertical_alignment = 1
 unique_name_in_owner = true
 script = ExtResource("7_xwgwe")
 
-[node name="damage" type="AudioStreamPlayer2D" parent="GameManager"]
+[node name="damage" type="AudioStreamPlayer" parent="GameManager"]
 stream = ExtResource("7_kk4ix")
-volume_db = -16.248
-pitch_scale = 2.4
+volume_db = -23.89
+pitch_scale = 1.7
 
-[node name="collecting" type="AudioStreamPlayer2D" parent="GameManager"]
+[node name="collecting" type="AudioStreamPlayer" parent="GameManager"]
 stream = ExtResource("8_objao")
-volume_db = -9.513
-pitch_scale = 1.67
+volume_db = -12.0
+pitch_scale = 1.15
 
 [node name="finish" parent="." instance=ExtResource("8_db0lk")]
 position = Vector2(3076, 162)

@@ -208,7 +208,7 @@ frame_progress = 0.0355913
 position = Vector2(-1.5, 12)
 shape = SubResource("RectangleShape2D_paox0")
 
-[node name="jump" type="AudioStreamPlayer2D" parent="."]
+[node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_rybeb")
-volume_db = -6.861
-pitch_scale = 1.8
+volume_db = -3.47
+pitch_scale = 2.75
