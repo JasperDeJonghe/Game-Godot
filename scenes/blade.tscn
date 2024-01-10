@@ -1,40 +1,38 @@
-[gd_scene load_steps=13 format=3 uid="uid://bnwnxrnoitpif"]
+[gd_scene load_steps=13 format=3 uid="uid://b5uq5wte2gi8c"]
 
-[sub_resource type="GDScript" id="GDScript_67ily"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_74eu8"]
-load_path = "res://.godot/imported/On (38x38).png-9bdf3d1dc10ab96c2305c1c7ab09c759.ctex"
+[ext_resource type="Texture2D" uid="uid://r0x8fpllm3ym" path="res://png/On (38x38).png" id="1_4n0y5"]
+[ext_resource type="Script" path="res://scenes/blade.gd" id="1_fwry4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cxura"]
-atlas = SubResource("CompressedTexture2D_74eu8")
+atlas = ExtResource("1_4n0y5")
 region = Rect2(0, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_48cca"]
-atlas = SubResource("CompressedTexture2D_74eu8")
+atlas = ExtResource("1_4n0y5")
 region = Rect2(38, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oja7i"]
-atlas = SubResource("CompressedTexture2D_74eu8")
+atlas = ExtResource("1_4n0y5")
 region = Rect2(76, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nsxe8"]
-atlas = SubResource("CompressedTexture2D_74eu8")
+atlas = ExtResource("1_4n0y5")
 region = Rect2(114, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_quf8j"]
-atlas = SubResource("CompressedTexture2D_74eu8")
+atlas = ExtResource("1_4n0y5")
 region = Rect2(152, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e2h03"]
-atlas = SubResource("CompressedTexture2D_74eu8")
+atlas = ExtResource("1_4n0y5")
 region = Rect2(190, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_osy84"]
-atlas = SubResource("CompressedTexture2D_74eu8")
+atlas = ExtResource("1_4n0y5")
 region = Rect2(228, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x0s85"]
-atlas = SubResource("CompressedTexture2D_74eu8")
+atlas = ExtResource("1_4n0y5")
 region = Rect2(266, 0, 38, 38)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r7x3q"]
@@ -73,7 +71,7 @@ animations = [{
 radius = 20.0
 
 [node name="Area2D" type="Area2D"]
-script = SubResource("GDScript_67ily")
+script = ExtResource("1_fwry4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_r7x3q")
