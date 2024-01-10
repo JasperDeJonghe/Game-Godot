@@ -15,10 +15,6 @@ run/main_scene="res://scenes/levels/mainMenu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://png/icon.svg"
 
-[autoload]
-
-Points="*res://Points.gd"
-
 [display]
 
 window/stretch/aspect="expand"

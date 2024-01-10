@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b1m2qsb51ssfy" path="res://scenes/spike_upsidedown.tscn" id="9_jaa2h"]
 [ext_resource type="PackedScene" uid="uid://brhmf85bkn85v" path="res://scenes/collectable.tscn" id="10_1nqvu"]
 [ext_resource type="PackedScene" uid="uid://bgsgviayau7aj" path="res://scenes/finish.tscn" id="11_d6gen"]
-[ext_resource type="PackedScene" uid="uid://4y3luk4cgjk0" path="res://scenes/levels/level5.tscn" id="12_v0pm8"]
+[ext_resource type="PackedScene" uid="uid://cwksjk2gg567m" path="res://scenes/levels/levelSelector.tscn" id="12_x86fu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_151ea"]
 texture = ExtResource("2_pygfv")
@@ -736,4 +736,4 @@ position = Vector2(2739, 539)
 
 [node name="finish" parent="." instance=ExtResource("11_d6gen")]
 position = Vector2(3008, 543)
-target_level = ExtResource("12_v0pm8")
+target_level = ExtResource("12_x86fu")
