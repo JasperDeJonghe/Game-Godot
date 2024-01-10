@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://c42gtgflcgvmj"]
+
+[ext_resource type="Script" path="res://scenes/levels/mainMenu.gd" id="1_njea1"]
+[ext_resource type="Texture2D" uid="uid://cgs7ph00ggcc1" path="res://png/cooltext450503269677355.png" id="2_ihkb3"]
+
+[sub_resource type="Gradient" id="Gradient_2k7lv"]
+offsets = PackedFloat32Array(0.0714286, 1)
+colors = PackedColorArray(0.223103, 0.223103, 0.223103, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hap7q"]
+gradient = SubResource("Gradient_2k7lv")
+height = 84
+fill_from = Vector2(0.54407, 0.820513)
+fill_to = Vector2(0.541284, 0)
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_njea1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_hap7q")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -530.5
+offset_top = -82.5
+offset_right = 530.5
+offset_bottom = 82.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ihkb3")

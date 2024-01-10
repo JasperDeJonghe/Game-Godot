@@ -16,3 +16,4 @@ func remove_point():
 	if points != 0:
 		points -= 1
 	points_label.text = "Points: " + str(points)
+

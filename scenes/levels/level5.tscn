@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://4y3luk4cgjk0"]
+[gd_scene load_steps=15 format=3 uid="uid://4y3luk4cgjk0"]
 
 [ext_resource type="Texture2D" uid="uid://bpvb2x3xluqbw" path="res://png/Purple.png" id="1_4dr86"]
 [ext_resource type="Texture2D" uid="uid://byvrgq3o36six" path="res://png/Terrain (16x16).png" id="2_70b8a"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bgsgviayau7aj" path="res://scenes/finish.tscn" id="8_tjxyb"]
 [ext_resource type="PackedScene" uid="uid://b1m2qsb51ssfy" path="res://scenes/spike_upsidedown.tscn" id="9_orsev"]
 [ext_resource type="PackedScene" uid="uid://brhmf85bkn85v" path="res://scenes/collectable.tscn" id="11_7rcif"]
+[ext_resource type="PackedScene" uid="uid://x1xdbpldbor2" path="res://scenes/levels/mainMenu.tscn" id="12_uyxi3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_151ea"]
 texture = ExtResource("2_70b8a")
@@ -750,3 +751,4 @@ position = Vector2(1180, 1169)
 
 [node name="finish" parent="." instance=ExtResource("8_tjxyb")]
 position = Vector2(647, 1263)
+target_level = ExtResource("12_uyxi3")
