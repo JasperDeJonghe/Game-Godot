@@ -35,11 +35,7 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction * SPEED
 	else:
-<<<<<<< HEAD
 		velocity.x = move_toward(velocity.x, 0, 25)
-=======
-		velocity.x = move_toward(velocity.x, 0, 15)
->>>>>>> parent of 8ab00d0 (changed level 5 and movement tweak)
 
 	move_and_slide()
 

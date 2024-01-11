@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b70pyjetak0ub"]
+[gd_scene load_steps=17 format=3 uid="uid://b70pyjetak0ub"]
 
 [ext_resource type="Texture2D" uid="uid://di2dstyvcueqs" path="res://png/Green.png" id="1_adyga"]
 [ext_resource type="Texture2D" uid="uid://byvrgq3o36six" path="res://png/Terrain (16x16).png" id="2_3ykvl"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bgsgviayau7aj" path="res://scenes/finish.tscn" id="8_db0lk"]
 [ext_resource type="AudioStream" uid="uid://bl54g2kyxnfxq" path="res://sounds/collecting.mp3" id="8_objao"]
 [ext_resource type="PackedScene" uid="uid://rdxiksx2q7u" path="res://scenes/spike.tscn" id="9_68aun"]
+[ext_resource type="Script" path="res://scenes/levels/UI.gd" id="12_46ybf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_151ea"]
 texture = ExtResource("2_3ykvl")
@@ -595,6 +596,30 @@ texture = ExtResource("2_3ykvl")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_151ea")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6fwt2"]
+bg_color = Color(0.407843, 0.635294, 0.321569, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_23lcr"]
+bg_color = Color(0.407843, 0.635294, 0.321569, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
 [node name="Node" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -657,27 +682,6 @@ position = Vector2(2382, 62)
 [node name="Area2D12" parent="colectables" instance=ExtResource("6_eqniy")]
 position = Vector2(2671, 349)
 
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="Panel" type="Panel" parent="UI"]
-offset_left = 18.0
-offset_top = 13.0
-offset_right = 233.0
-offset_bottom = 130.0
-
-[node name="points_label" type="Label" parent="UI/Panel"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 35
-text = "Points: 0"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("7_xwgwe")
@@ -693,8 +697,9 @@ volume_db = -12.0
 pitch_scale = 1.15
 
 [node name="finish" parent="." instance=ExtResource("8_db0lk")]
-position = Vector2(3076, 162)
+position = Vector2(3068, 161)
 target_level = ExtResource("8_2anys")
+minimum_poits = 8
 
 [node name="Area2D" parent="." instance=ExtResource("9_68aun")]
 position = Vector2(1418, 555)
@@ -728,3 +733,52 @@ position = Vector2(2907, 456)
 
 [node name="Area2D11" parent="." instance=ExtResource("9_68aun")]
 position = Vector2(2954, 456)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 2969.0
+offset_top = 111.0
+offset_right = 3174.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 15
+text = "You need 8 points to enter"
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("12_46ybf")
+
+[node name="Panel" type="Panel" parent="UI"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -355.5
+offset_top = 19.0
+offset_right = 355.5
+offset_bottom = 60.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6fwt2")
+
+[node name="points_label" type="Label" parent="UI/Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "8 points left"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="UI"]
+offset_left = 992.0
+offset_top = 20.0
+offset_right = 1108.0
+offset_bottom = 136.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_23lcr")
+text = "Exit
+"
+
+[connection signal="pressed" from="UI/Button" to="UI" method="_on_button_pressed"]
