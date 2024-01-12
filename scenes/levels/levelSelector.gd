@@ -8,3 +8,5 @@ func _on_level_3_pressed():
 	get_tree().change_scene_to_file("res://scenes/levels/level3.tscn")
 func _on_level_4_pressed():
 	get_tree().change_scene_to_file("res://scenes/levels/level4.tscn")
+func _on_next_pressed():
+	get_tree().change_scene_to_file("res://scenes/levels/levelSelector2.tscn")

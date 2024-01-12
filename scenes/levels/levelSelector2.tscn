@@ -1,13 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cwksjk2gg567m"]
+[gd_scene load_steps=4 format=3 uid="uid://bu1g4ie5f77dv"]
 
-[ext_resource type="Script" path="res://scenes/levels/levelSelector.gd" id="1_4tabu"]
-[ext_resource type="Texture2D" uid="uid://ss8d3nf6py6x" path="res://png/Yellow.png" id="2_w8jbd"]
+[ext_resource type="Script" path="res://scenes/levels/levelSelector.gd" id="1_p0spd"]
+[ext_resource type="Texture2D" uid="uid://ss8d3nf6py6x" path="res://png/Yellow.png" id="2_k3xou"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tgbjk"]
 bg_color = Color(0.576471, 0.45098, 0.368627, 1)
 
-[node name="levelSelector" type="Node"]
-script = ExtResource("1_4tabu")
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_p0spd")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -18,10 +18,10 @@ offset_right = 24.0
 offset_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_w8jbd")
+texture = ExtResource("2_k3xou")
 stretch_mode = 1
 
-[node name="level_1" type="Button" parent="."]
+[node name="level_5" type="Button" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -35,9 +35,9 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
-text = "Level 1"
+text = "Level 5"
 
-[node name="level_2" type="Button" parent="."]
+[node name="level_6" type="Button" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -51,9 +51,9 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
-text = "Level 2"
+text = "Level 6"
 
-[node name="level_3" type="Button" parent="."]
+[node name="level_7" type="Button" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -67,10 +67,10 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
-text = "Level 3
+text = "Level 7
 "
 
-[node name="level_4" type="Button" parent="."]
+[node name="level_8" type="Button" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -84,27 +84,5 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
-text = "Level 4
+text = "Level 8
 "
-
-[node name="next" type="Button" parent="."]
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -81.0
-offset_top = -57.0
-offset_right = -13.0
-offset_bottom = 57.0
-grow_horizontal = 0
-grow_vertical = 2
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
-text = ">"
-
-[connection signal="pressed" from="level_1" to="." method="_on_level_1_pressed"]
-[connection signal="pressed" from="level_2" to="." method="_on_level_2_pressed"]
-[connection signal="pressed" from="level_3" to="." method="_on_level_3_pressed"]
-[connection signal="pressed" from="level_4" to="." method="_on_level_4_pressed"]
-[connection signal="pressed" from="next" to="." method="_on_next_pressed"]

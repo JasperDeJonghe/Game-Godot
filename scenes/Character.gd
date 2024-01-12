@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var sprite_2d = $AnimatedSprite2D
 
 const SPEED = 400.0
-const JUMP_VELOCITY = -900.0
+var JUMP_VELOCITY = -900.0
 @onready var jumpSound = $jump
 
 
@@ -16,7 +16,6 @@ func _physics_process(delta):
 		sprite_2d.animation = "run"
 	else:
 		sprite_2d.animation = "default"
-		
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta

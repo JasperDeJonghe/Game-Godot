@@ -596,7 +596,7 @@ texture = ExtResource("2_3ykvl")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_151ea")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b2od1"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4cuvq"]
 bg_color = Color(0.407843, 0.635294, 0.321569, 1)
 border_width_left = 2
 border_width_top = 2
@@ -608,7 +608,7 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3aj54"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rvopu"]
 bg_color = Color(0.407843, 0.635294, 0.321569, 1)
 border_width_left = 2
 border_width_top = 2
@@ -746,7 +746,7 @@ offset_top = 19.0
 offset_right = 355.5
 offset_bottom = 60.0
 grow_horizontal = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_b2od1")
+theme_override_styles/panel = SubResource("StyleBoxFlat_4cuvq")
 
 [node name="points_label" type="Label" parent="UI/Panel"]
 unique_name_in_owner = true
@@ -757,19 +757,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
-text = "10 points left"
+text = "Points"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Button" type="Button" parent="UI"]
-offset_left = 992.0
-offset_top = 20.0
-offset_right = 1108.0
-offset_bottom = 136.0
+offset_left = 981.0
+offset_top = 19.0
+offset_right = 1124.0
+offset_bottom = 92.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_3aj54")
-text = "Exit
+theme_override_styles/normal = SubResource("StyleBoxFlat_rvopu")
+text = "Menu
 "
 
 [connection signal="pressed" from="UI/Button" to="UI" method="_on_button_pressed"]

@@ -766,19 +766,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
-text = "8 points left"
+text = "Points"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Button" type="Button" parent="UI"]
-offset_left = 992.0
-offset_top = 20.0
-offset_right = 1108.0
-offset_bottom = 136.0
+offset_left = 981.0
+offset_top = 19.0
+offset_right = 1124.0
+offset_bottom = 92.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_23lcr")
-text = "Exit
+text = "Menu
 "
 
 [connection signal="pressed" from="UI/Button" to="UI" method="_on_button_pressed"]
