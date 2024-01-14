@@ -1,0 +1,88 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu1g4ie5f77dv"]
+
+[ext_resource type="Script" path="res://scenes/levels/levelSelector.gd" id="1_p0spd"]
+[ext_resource type="Texture2D" uid="uid://ss8d3nf6py6x" path="res://png/Yellow.png" id="2_k3xou"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tgbjk"]
+bg_color = Color(0.576471, 0.45098, 0.368627, 1)
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_p0spd")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 24.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_k3xou")
+stretch_mode = 1
+
+[node name="level_5" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -339.0
+offset_top = -108.0
+offset_right = -69.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
+text = "Level 5"
+
+[node name="level_6" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 90.0
+offset_top = -108.0
+offset_right = 360.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
+text = "Level 6"
+
+[node name="level_7" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -339.0
+offset_top = 42.0
+offset_right = -69.0
+offset_bottom = 132.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
+text = "Level 7
+"
+
+[node name="level_8" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 90.0
+offset_top = 42.0
+offset_right = 360.0
+offset_bottom = 132.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgbjk")
+text = "Level 8
+"
