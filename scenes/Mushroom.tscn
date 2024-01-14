@@ -272,10 +272,17 @@ animations = [{
 size = Vector2(25, 19)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pelri"]
+<<<<<<< HEAD
+size = Vector2(23.2, 1.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vmj4w"]
+size = Vector2(26.4, 19)
+=======
 size = Vector2(20, 1.6)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vmj4w"]
 size = Vector2(25.2, 19)
+>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(2.5, 2.5)
@@ -284,28 +291,62 @@ script = ExtResource("1_fi0kt")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_csflk")
+<<<<<<< HEAD
+animation = &"run"
+autoplay = "run"
+frame = 14
+frame_progress = 0.297411
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 5.5)
+=======
 animation = &"hit"
 autoplay = "run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 5.5)
+scale = Vector2(1, 1)
+>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5
 shape = SubResource("RectangleShape2D_6lhtm")
 
 [node name="hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+<<<<<<< HEAD
+position = Vector2(5.72204e-07, -4.8)
+=======
 position = Vector2(0, -4.8)
+scale = Vector2(1, 1)
+>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5
 shape = SubResource("RectangleShape2D_pelri")
 
 [node name="deathzone" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="deathzone"]
+<<<<<<< HEAD
+position = Vector2(-9.53674e-07, 5.5)
+=======
 position = Vector2(-0.6, 5.5)
+scale = Vector2(1, 1)
+>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5
 shape = SubResource("RectangleShape2D_vmj4w")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2(-8.8, -0.4)
 target_position = Vector2(0, 20)
 
+<<<<<<< HEAD
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+position = Vector2(0, 6)
+rotation = 1.57079
+target_position = Vector2(0, 20)
+
+[node name="RayCast2D3" type="RayCast2D" parent="."]
+position = Vector2(0, 6.4)
+rotation = -1.57079
+target_position = Vector2(0, 20)
+
+=======
+>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5
 [connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
 [connection signal="body_entered" from="deathzone" to="." method="_on_deathzone_body_entered"]

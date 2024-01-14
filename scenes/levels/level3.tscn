@@ -597,7 +597,7 @@ texture = ExtResource("2_5l1kx")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_151ea")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_joe3v"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4myg"]
 bg_color = Color(0.407843, 0.635294, 0.321569, 1)
 border_width_left = 2
 border_width_top = 2
@@ -609,7 +609,7 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0jplo"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jkp14"]
 bg_color = Color(0.407843, 0.635294, 0.321569, 1)
 border_width_left = 2
 border_width_top = 2
@@ -743,7 +743,7 @@ offset_top = 19.0
 offset_right = 355.5
 offset_bottom = 60.0
 grow_horizontal = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_joe3v")
+theme_override_styles/panel = SubResource("StyleBoxFlat_d4myg")
 
 [node name="points_label" type="Label" parent="UI/Panel"]
 unique_name_in_owner = true
@@ -759,13 +759,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Button" type="Button" parent="UI"]
-offset_left = 981.0
-offset_top = 19.0
-offset_right = 1124.0
-offset_bottom = 92.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -149.0
+offset_top = 7.0
+offset_right = -6.0
+offset_bottom = 80.0
+grow_horizontal = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_0jplo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jkp14")
 text = "Menu
 "
 

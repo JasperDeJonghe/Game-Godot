@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<<< HEAD:png/GameOver.png.import
 uid="uid://dme6yvs220nid"
 path="res://.godot/imported/GameOver.png-cd1fc0208c24e77513bf31fdd9c0a48c.ctex"
+========
+uid="uid://caug21ejp83sp"
+path="res://.godot/imported/Orange.png-14ec0d89fa97034aad84c9202ae7e730.ctex"
+>>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5:png/Orange.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<<< HEAD:png/GameOver.png.import
 source_file="res://png/GameOver.png"
 dest_files=["res://.godot/imported/GameOver.png-cd1fc0208c24e77513bf31fdd9c0a48c.ctex"]
+========
+source_file="res://png/Orange.png"
+dest_files=["res://.godot/imported/Orange.png-14ec0d89fa97034aad84c9202ae7e730.ctex"]
+>>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5:png/Orange.png.import
 
 [params]
 

@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<<< HEAD:png/Orange.png.import
 uid="uid://caug21ejp83sp"
 path="res://.godot/imported/Orange.png-14ec0d89fa97034aad84c9202ae7e730.ctex"
+========
+uid="uid://dx0cm7c2204so"
+path="res://.godot/imported/Hit.png-6a3129af6c1ff1b99547a9fd0fabad8d.ctex"
+>>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5:png/mushroom/Hit.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<<< HEAD:png/Orange.png.import
 source_file="res://png/Orange.png"
 dest_files=["res://.godot/imported/Orange.png-14ec0d89fa97034aad84c9202ae7e730.ctex"]
+========
+source_file="res://png/mushroom/Hit.png"
+dest_files=["res://.godot/imported/Hit.png-6a3129af6c1ff1b99547a9fd0fabad8d.ctex"]
+>>>>>>>> fa4adb0283689fe350583596038bc1ab213d86e5:png/mushroom/Hit.png.import
 
 [params]
 
